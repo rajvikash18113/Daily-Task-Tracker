@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Daily Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div style="text-align: center; margin-bottom: 10px;">
+    <button onclick="toggleDarkMode()">🌗</button>
+  </div>
+
+  <h1>📅 Daily Task Tracker</h1>
+  <div id="month-selector">
+    <label for="month">Select Month : </label>
+    <select id="month" onchange="renderTasks()">
+      <option value="0">January</option>
+      <option value="1">February</option>
+      <option value="2">March</option>
+      <option value="3">April</option>
+      <option value="4">May</option>
+      <option value="5" selected>June</option>
+      <option value="6">July</option>
+      <option value="7">August</option>
+      <option value="8">September</option>
+      <option value="9">October</option>
+      <option value="10">November</option>
+      <option value="11">December</option>
+    </select>
+
+    <select id="year">
+      <!-- We'll fill year options with JS -->
+    </select>
+  </div>
+
+
+  <div id="task-list">
+    <!-- Task rows will be generated here -->
+  </div>
+
+  <div id="add-task">
+    <input type="text" id="new-task" placeholder="Add new task (e.g., OS)">
+    <button onclick="addTask()">➕ Add Task</button>
+  </div>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <button onclick="resetAll()">🔁 Reset All Checkboxes</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

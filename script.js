@@ -12,7 +12,6 @@ function renderTasks() {
   const selectedYear = Number(document.getElementById("year").value);
   const days = getDaysInMonth(selectedMonth, selectedYear);
 
-
   // This was for Date Header Row
 
   // // 1. Create and append the date header row
